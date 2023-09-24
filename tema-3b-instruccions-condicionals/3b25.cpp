@@ -3,30 +3,30 @@
 using namespace std;
 
 int main() {
-    float teoria, seminaris, practiques, notaFinal;
-    string notaActa;
+    float teoria, seminaris, practiques, nota;
+    string nota_text;
     cin >> teoria >> seminaris >> practiques;
-    notaFinal = (0.4 * teoria) + (0.3 * seminaris) + (0.3 * practiques);
-    if (notaFinal < 4.99) {
-        notaActa = "SUSPES";
+    nota = (0.4 * teoria) + (0.3 * seminaris) + (0.3 * practiques);
+    if (nota < 4.99) {
+        nota_text = "SUSPES";
     }
     else {
-        if (notaFinal < 6.99) {
-            notaActa = "APROVAT";
+        if (nota < 6.99) {
+            nota_text = "APROVAT";
         }
         else {
-            if (notaFinal < 8.99) {
-                notaActa = "NOTABLE";
+            if (nota < 8.99) {
+                nota_text = "NOTABLE";
             }
             else {
-                if (notaFinal < 9.99) {
-                    notaActa = "EXCEL.LENT";
+                if (nota < 9.99) {
+                    nota_text = "EXCEL.LENT";
                 }
                 else {
-                    notaActa = "MATRICULA D'HONOR";
+                    nota_text = "MATRICULA D'HONOR";
                 }
             }
         }
     }
-    cout << "La nota final es " << notaFinal << " - " << notaActa;
+    cout << "La nota final es " << nota << " - " << nota_text;
 }

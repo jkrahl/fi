@@ -4,11 +4,11 @@ using namespace std;
 
 int main(){
     bool b;
-    int input;
+    int num;
     
-    cin >> input;
+    cin >> num;
     
-    b = (input <= 10);
+    b = (num <= 10);
     
     cout << "El resultat de la comparacio es: " << b << endl;
 }

@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-    char c;
-    cin >> c;
-    if((c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u') || (c == 'A') || (c == 'E') || (c == 'I') || (c == 'O') || (c == 'U')){
+    char letra;
+    cin >> letra;
+    if((letra == 'a') || (letra == 'e') || (letra == 'i') || (letra == 'o') || (letra == 'u') || (letra == 'A') || (letra == 'E') || (letra == 'I') || (letra == 'O') || (letra == 'U')){
         cout << "Vocal";
     }
     else {

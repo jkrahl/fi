@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-    int num1;
-    cin >> num1;
-    if(num1 >= 0){
+    int num;
+    cin >> num;
+    if(num >= 0){
         cout << "Positiu";
     }
     else {

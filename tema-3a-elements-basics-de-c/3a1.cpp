@@ -3,11 +3,11 @@
 using namespace std;
 
 int main(){
-    int anyN;
+    int any_nascut;
     
-    cin >> anyN;
+    cin >> any_nascut;
     
-    cout << "Tens " << 2023 - anyN << " anys";
+    cout << "Tens " << 2023 - any_nascut << " anys";
     
     return 0;
 }

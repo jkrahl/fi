@@ -3,32 +3,32 @@
 using namespace std;
 
 int main(){
-    int hh, mm, ss;
-    char c;
-    cin >> hh >> c >> mm >> c >> ss;
-    cout << hh << ":" << mm << ":" << ss << endl;
-    ss += 1;
-    if(ss >= 60){
-        ss = 0;
-        mm += 1;
+    int hores, minuts, segons;
+    char dos_punts;
+    cin >> hores >> dos_punts >> minuts >> dos_punts >> segons;
+    cout << hores << ":" << minuts << ":" << segons << endl;
+    segons += 1;
+    if(segons >= 60){
+        segons = 0;
+        minuts += 1;
     }
-    if(mm >= 60){
-        mm = 0;
-        hh += 1;
+    if(minuts >= 60){
+        minuts = 0;
+        hores += 1;
     }
-    if(hh >= 24){
-        hh = 0;
+    if(hores >= 24){
+        hores = 0;
     }
-    if(hh < 10){
+    if(hores < 10){
         cout << 0;
     }
-    cout << hh << ":";
-    if(mm < 10){
+    cout << hores << ":";
+    if(minuts < 10){
         cout << 0;
     }
-    cout << mm << ":";
-    if(ss < 10){
+    cout << minuts << ":";
+    if(segons < 10){
         cout << 0;
     }
-    cout << ss;
+    cout << segons;
 }

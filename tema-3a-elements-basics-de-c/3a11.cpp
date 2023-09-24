@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    float n1, n2, n3, mm;
-    cin >> n1 >> n2 >> n3;
-    mm = (n1 + n2 + n3) / 3.0;
-    cout << "La mitjana de les tres notes " << n1 << ", " << n2 << " i " << n3 << " es " << mm;
+    float num1, num2, num3, mitjana;
+    cin >> num1 >> num2 >> num3;
+    mitjana = (num1 + num2 + num3) / 3.0;
+    cout << "La mitjana de les tres notes " << num1 << ", " << num2 << " i " << num3 << " es " << mitjana;
 
 }

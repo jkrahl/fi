@@ -3,20 +3,20 @@
 using namespace std;
 
 int main(){
-    float salariBrut, salariFinal, perc;
+    float salari_brut, salari_final, percentatge;
     int ant;
-    cin >> salariBrut >> ant;
+    cin >> salari_brut >> ant;
     if(ant < 3){
-        perc = 0.01;
+        percentatge = 0.01;
     }
     else{
         if(ant < 5){
-            perc = 0.02;
+            percentatge = 0.02;
         }
         else{
-            perc = 0.035;
+            percentatge = 0.035;
         }
     }
-    salariFinal = salariBrut * (1 + perc);
-    cout << "El salari final es: " << salariFinal;
+    salari_final = salari_brut * (1 + percentatge);
+    cout << "El salari final es: " << salari_final;
 }

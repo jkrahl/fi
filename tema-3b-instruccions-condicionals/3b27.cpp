@@ -3,51 +3,51 @@ using namespace std;
 
 int main()
 {
-    int a, b, c, d;
-    int comparacions = 0;
+    int num1, num2, num3, num4;
+    int c = 0;
 
-    cin >> a >> b >> c >> d;
+    cin >> num1 >> num2 >> num3 >> num4;
 
-    comparacions++;
-    if (a > b) {
-        comparacions++;
-        if (a > c) {
-            comparacions++;
-            if (a > d) {
-                cout << "El numero mes gran de la serie es " << a << ". Comparacions: " << comparacions;
+    c++;
+    if (num1 > num2) {
+        c++;
+        if (num1 > num3) {
+            c++;
+            if (num1 > num4) {
+                cout << "El numero mes gran de la serie es " << num1 << ". Comparacions: " << c;
             }
             else {
-                cout << "El numero mes gran de la serie es " << d << ". Comparacions: " << comparacions;
+                cout << "El numero mes gran de la serie es " << num4 << ". Comparacions: " << c;
             }
         }
         else {
-            comparacions++;
-            if (c > d) {
-                cout << "El numero mes gran de la serie es " << c << ". Comparacions: " << comparacions;
+            c++;
+            if (num3 > num4) {
+                cout << "El numero mes gran de la serie es " << num3 << ". Comparacions: " << c;
             }
             else {
-                cout << "El numero mes gran de la serie es " << d << ". Comparacions: " << comparacions;
+                cout << "El numero mes gran de la serie es " << num4 << ". Comparacions: " << c;
             }
         }
     }
     else {
-        comparacions++;
-        if (b > c) {
-            comparacions++;
-            if (b > d) {
-                cout << "El numero mes gran de la serie es " << b << ". Comparacions: " << comparacions;
+        c++;
+        if (num2 > num3) {
+            c++;
+            if (num2 > num4) {
+                cout << "El numero mes gran de la serie es " << num2 << ". Comparacions: " << c;
             }
             else {
-                cout << "El numero mes gran de la serie es " << d << ". Comparacions: " << comparacions;
+                cout << "El numero mes gran de la serie es " << num4 << ". Comparacions: " << c;
             }
         }
         else {
-            comparacions++;
-            if (c > d) {
-                cout << "El numero mes gran de la serie es " << c << ". Comparacions: " << comparacions;
+            c++;
+            if (num3 > num4) {
+                cout << "El numero mes gran de la serie es " << num3 << ". Comparacions: " << c;
             }
             else {
-                cout << "El numero mes gran de la serie es " << d << ". Comparacions: " << comparacions;
+                cout << "El numero mes gran de la serie es " << num4 << ". Comparacions: " << c;
             }
         }
     }

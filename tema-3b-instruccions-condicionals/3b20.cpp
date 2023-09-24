@@ -3,21 +3,21 @@
 using namespace std;
 
 int main(){
-    float x, y, z;
-    cin >> x >> y >> z;
-    if(((x + y) == z))
+    float num1, num2, num3;
+    cin >> num1 >> num2 >> num3;
+    if(((num1 + num2) == num3))
     {
         cout << "IGUALS";
     }
     else
     {
-        if((x + z) == y)
+        if((num1 + num3) == num2)
         {
             cout << "IGUALS";
         }
         else
         {
-            if((y + z) == x)
+            if((num2 + num3) == num1)
             {
                 cout << "IGUALS";
             }

@@ -1,11 +1,13 @@
 #include <iostream>
+
 #define ANY_ACTUAL 2023
+
 using namespace std;
 
 int main(){
-    int edat, anyN;
-    cin >> anyN;
-    edat = ANY_ACTUAL - anyN;
+    int edat, any_nascut;
+    cin >> any_nascut;
+    edat = ANY_ACTUAL - any_nascut;
     if(edat >= 18){
         cout << "Tens " << edat << " anys i ets major d'edat. ";
         if(edat >= 67){

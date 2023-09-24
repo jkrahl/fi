@@ -4,9 +4,9 @@
 using namespace std;
 
 int main(){
-    int anyN, edat;
-    cin >> anyN;
-    edat = ANY_ACTUAL - anyN;
+    int any_nascut, edat;
+    cin >> any_nascut;
+    edat = ANY_ACTUAL - any_nascut;
     if(edat < 18){
         cout << "Tens " << edat << " anys i ets menor d'edat.";
     }

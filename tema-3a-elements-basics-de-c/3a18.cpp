@@ -2,8 +2,10 @@
 
 using namespace std;
 
-int main(){
-    char n, c; int e;
-    cin >> n >> c >> e;
-    cout << "Hola "<<n<<"."<<c<<". Tens "<< e <<" anys!";
+int main()
+{
+    char inicial1, inicial2;
+    int edat;
+    cin >> inicial1 >> inicial2 >> edat;
+    cout << "Hola " << inicial1 << "." << inicial2 << ". Tens " << edat << " anys!";
 }
