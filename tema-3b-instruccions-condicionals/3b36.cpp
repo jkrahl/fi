@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
     // 1r programa
-    int dia, mes, any, diesDelMes;
-    char c;
-    bool mesCorrecte = 0;
-    cin >> dia >> c >> mes >> c >> any;
+    int dia, mes, any, dies_mes;
+    char barra;
+    bool mes_correcte = 0;
+    cin >> dia >> barra >> mes >> barra >> any;
     switch (mes)
     {
     case 1:
@@ -18,40 +18,40 @@ int main()
     case 8:
     case 10:
     case 12:
-        diesDelMes = 31;
-        mesCorrecte = 1;
+        dies_mes = 31;
+        mes_correcte = 1;
         break;
     case 4:
     case 6:
     case 9:
     case 11:
-        diesDelMes = 30;
-        mesCorrecte = 1;
+        dies_mes = 30;
+        mes_correcte = 1;
         break;
     case 2:
-        diesDelMes = 28;
-        mesCorrecte = 1;
+        dies_mes = 28;
+        mes_correcte = 1;
         break;
     default:
         cout << "Error: Mes incorrecte";
         break;
     }
-    if (mesCorrecte == 1)
+    if (mes_correcte == 1)
     {
         // 2n programa
         if (mes == 2)
         {
             if ((any % 4 == 0 && any % 100 != 0) || any % 400 == 0)
             {
-                diesDelMes = 29;
+                dies_mes = 29;
             }
             else
             {
-                diesDelMes = 28;
+                dies_mes = 28;
             }
         }
         // 3r programa
-        if (dia <= diesDelMes && dia > 0)
+        if (dia <= dies_mes && dia > 0)
         {
             cout << "Data correcta";
         }
