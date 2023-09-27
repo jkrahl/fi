@@ -30,3 +30,9 @@ int main()
         cout << "No hi ha cap nombre parell en la sequencia.";
     }
 }
+//La variable `hayPar` se inicializa en falso porque se utiliza para saber si algún número en la secuencia es par.
+//Al iniciar el programa, no se ha ingresado ningún número, por lo que no se sabe si hay algún un número par, asumimos que no.
+//Luego el programa pide al usuario que introduzca un número ('entrada') y comprueba si este número es distinto de cero, y en caso afirmativo, si es par.
+//Si el número 'entrada' introducido es par, se cambia el valor de 'hayPar' a true (verdadero). 
+//Después de introducir todos los números (terminando la secuencia con un 0), si 'hayPar' es verdadero, quiere decir que al menos un número en la secuencia era par
+//y se imprime un mensaje indicándolo. Si 'hayPar' sigue siendo falso, significa que no hubo ningún número par en la secuencia y se imprime un mensaje diferente.
