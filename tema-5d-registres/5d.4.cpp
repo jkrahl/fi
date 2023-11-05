@@ -10,24 +10,24 @@ typedef struct
 	int pressupost;
 } TEquip;
 
-void OmplirDadesEquip(TEquip &t)
+void OmplirDadesEquip(TEquip &e)
 {
-	cin >> t.nom;
-	cin >> t.ciutat;
-	cin >> t.punts;
-	cin >> t.pressupost;
+	cin >> e.nom;
+	cin >> e.ciutat;
+	cin >> e.punts;
+	cin >> e.pressupost;
 }
 
-void MostrarDadesEquip(TEquip t)
+void MostrarDadesEquip(TEquip e)
 {
-	cout << t.nom << " " << t.ciutat << " " << t.punts << " " << t.pressupost << endl;
+	cout << e.nom << " " << e.ciutat << " " << e.punts << " " << e.pressupost << endl;
 }
 
-int CompararEquips(TEquip t1, TEquip t2)
+int CompararEquips(TEquip e1, TEquip e2)
 {
-	if (t2.punts > t1.punts)
+	if (e2.punts > e1.punts)
 		return -1;
-	else if (t1.punts > t2.punts)
+	else if (e1.punts > e2.punts)
 		return 1;
 	else
 		return 0;
@@ -35,20 +35,20 @@ int CompararEquips(TEquip t1, TEquip t2)
 
 int main()
 {
-	TEquip t1, t2;
+	TEquip e1, e2;
 
-	OmplirDadesEquip(t1);
-	OmplirDadesEquip(t2);
-	MostrarDadesEquip(t1);
-	MostrarDadesEquip(t2);
+	OmplirDadesEquip(e1);
+	OmplirDadesEquip(e2);
+	MostrarDadesEquip(e1);
+	MostrarDadesEquip(e2);
 
-	int res = CompararEquips(t1, t2);
-	cout << t1.nom << " te ";
+	int res = CompararEquips(e1, e2);
+	cout << e1.nom << " te ";
 	if (res == -1)
 		cout << "menys ";
 	else if (res == 1)
 		cout << "mes ";
 	else
 		cout << "els mateixos ";
-	cout << "punts a la lliga que " << t2.nom << endl;
+	cout << "punts a la lliga que " << e2.nom << endl;
 }
